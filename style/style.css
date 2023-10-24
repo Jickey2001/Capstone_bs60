@@ -13,3 +13,101 @@ a{
 ul{
     list-style: none;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container{
+    max-width: 1200px;
+}
+/* aboutUs */
+.aboutUs .leftTitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.aboutUs .leftContent{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.aboutUs p{
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(22 28 45 / 70%);
+    font-family: 'Quicksand', sans-serif;
+}
+/* agent */
+.agentBlock{
+    background: #ff6600;
+}
+.agentLeft{
+    background: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    min-height: 600px;
+    background-size: cover;
+}
+.agent .agentTitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.agent .agentContent{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.agent p{
+    color: #ffdfc9;
+    font-size: 18px;
+    line-height: 28px;
+}
+.agent .agentSub{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+.agentSub .icon{
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.icon i{
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+}
+.agentSub a{
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.iconLeft:hover i{
+    color: #ffc600;
+    transition: 0.3s ease-in-out;
+}
+.iconRight:hover i{
+    color: #ffc600;
+    transition: 0.3s ease-in-out;
+}
