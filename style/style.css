@@ -7,10 +7,15 @@
 body{
     font-family: 'Quicksand', sans-serif;
 }
-a{
+a {
     text-decoration: none;
     background-color: transparent;
+    transition: all 0.5s;
 }
+a:hover{
+    text-decoration: none;
+}
+
 ul{
     list-style: none;
 }
@@ -23,6 +28,24 @@ ul{
 .container{
     max-width: 1200px;
 }
+
+.Title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.Text{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+
 /* aboutUs */
 .aboutUs .leftTitle{
     font-size: 20px;
@@ -134,20 +157,7 @@ ul{
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
 }
-.categories .categoriesTitle{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #ff6600;
-    display: block;
-    font-family: 'Pacifico', cursive;
-}
-.categories .categoriesText{
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600;
-}
+
 .categories .categoriesContent .itemImg{
     position: relative;
 }
@@ -195,182 +205,4 @@ ul{
     line-height: 25px;
     color: #ffc600;
     opacity: 0.9;
-}
-/* service */
-.service{
-    position: relative;
-}
-.service .serviceItem{
-    /* position: relative;
-    width: 100%; */
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.service .serviceItem .itemWrap{
-    padding: 40px 40px;
-    transition: all 0.5s ease 0s;
-    border-radius: 8px;
-    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
-    background-color: #fff;
-    position: relative;
-    border: 1px solid #eee;
-}
-.service .serviceItem .itemWrap:hover{
-    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
-}
-.service .serviceItem .itemWrap .itemTop{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 30px;
-}
-.service .serviceItem .itemWrap .itemTop .itemIcon{
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    background: rgb(130 115 252 / 5%);
-    line-height: 70px;
-    border-radius: 6px;
-    transition: 0.3s ease-in-out;
-}
-.service .serviceItem .itemWrap:hover .itemIcon{
-    background-color: #ff6600;
-    transition: 0.3s ease-in-out;
-}
-.service .serviceItem .itemWrap .itemTop .itemIcon i{
-    color: #ff6600;
-    font-size: 25px;
-    line-height: 70px;
-}
-.service .serviceItem .itemWrap:hover .itemIcon i{
-    color: #fff;
-    transition: 0.3s ease-in-out;
-}
-
-.service .serviceItem .itemWrap .itemTop .itemText a{
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    display: block;
-    color: #232121;
-}
-.service .serviceItem .itemWrap .itemTop .itemText a:hover{
-    color: #ff6600;
-}
-.service .serviceItem .itemWrap p{
-    font-size: 18px;
-    line-height: 28px;
-    color:rgb(22 28 45 / 70%);
-    font-family: 'Quicksand', sans-serif;
-}
-/* infor  */
-.infor{  
-    background: url(../img/Middle-infor.jpg);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-.infor::before{
-    content: "";
-    background: rgb(16 15 19 / 66%);
-    position: absolute;
-    top: 0;
-    min-height: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.infor .inforText{
-    max-width: 700px;
-    margin: 0 auto;
-}
-.infor .inforText h3{
-    font-size: 45px;
-    line-height: 55px;
-    font-weight: 600;
-    color: #fff;
-    max-width: 800px;
-}
-.infor .inforText .inforButton a{
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 12px 45px;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 700;
-    border-radius: 6px;
-}
-.infor .inforText .inforButton i{
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-}
-.infor .inforText .inforButton .firstButton{
-    margin-right: 20px;
-}
-.infor .inforText .inforButton .firstButton:hover{
-    background: #fff;
-    border: 2px solid #fff;
-    color: #ff6600;
-}
-.infor .inforText .inforButton .secondButton{
-    color: #fff;
-    background-color: #ff6600;
-    border: 2px solid transparent;
-}
-.infor .inforText .inforButton .secondButton:hover{
-    color: #fff;
-    background-color: #ff6600;
-    border: 2px solid #ff6600;
-    opacity: 0.8;
-}
-/* stats */
-.stats{
-    margin-top: -70px;
-    z-index: 10;
-    position: relative;
-}
-.stats .statsItem{
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.stats .statsItem .statsCounter{
-    background-color: #fff;
-    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
-    padding: 40px 20px;
-    border-radius: 6px;
-    text-align: center;
-}
-.stats .statsItem .statsCounter:hover{
-    transform: translateY(-0.25rem);
-    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
-    transition: .3s ease;
-
-}
-.stats .statsItem .statsCounter i{
-    background: #ff6600;
-    font-size: 26px;
-    border-radius: 50%;
-    width: 68px;
-    height: 68px;
-    line-height: 68px;
-    color: #fff;
-    text-align: center;
-}
-.stats .statsItem .statsCounter .counter{
-    font-size: 2.6em;
-    font-weight: 600;
-    color: #232121;
-}
-.stats .statsItem .statsCounter .counterText{
-    text-transform: capitalize;
-    color:rgb(22 28 45 / 70%);
-    font-weight: 600;
-    font-size: 1.1em;
-    line-height: 28px;
-    font-family: 'Quicksand', sans-serif;
 }
